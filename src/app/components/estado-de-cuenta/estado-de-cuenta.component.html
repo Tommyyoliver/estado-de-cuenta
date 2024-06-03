@@ -3,11 +3,11 @@
         <div class="col-1">
             <span>
                 <p class="cabecera-dato">Cliente</p>
-                <p class="cabecera-valor">200001901</p>
+                <p class="cabecera-valor">{{ datos.cliente }}</p>
             </span>
             <span>
                 <p class="cabecera-dato">Área ctrl.créditos</p>
-                <p class="cabecera-valor">AG16</p>
+                <p class="cabecera-valor">{{ datos.areaCtrlCreditos }}</p>
             </span>
         </div>
 
@@ -17,7 +17,7 @@
             </span>
             <span>
                 <p class="cabecera-dato-2">Area Control Cred. AQUACHILE</p>
-                <p class="cabecera-valor">USD</p>
+                <p class="cabecera-valor">{{ datos.areaControlCredAQUACHILE }}</p>
             </span>
         </div>
     </article>
@@ -28,19 +28,19 @@
             <div class="tabla-col-1">
                 <div>
                     <p class="tabla-dato">Límite de crédito</p>
-                    <p class="tabla-valor-2">023456500</p>
+                    <p class="tabla-valor-2">{{ datos.limiteCredito | number:'1.4-4' }}</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Cuenta de crédito</p>
-                    <p class="tabla-valor">0000</p>
+                    <p class="tabla-valor">{{ datos.cuentaCredito }}</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Grado de agotamiento</p>
-                    <p class="tabla-valor">0000</p><p>%</p>
+                    <p class="tabla-valor">{{ datos.gradoAgotamiento | number:'1.2-2' }}</p><p>%</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Fe.horizonte crédito</p>
-                    <p class="tabla-valor-fecha">0000</p>
+                    <p class="tabla-valor-fecha">{{ datos.feHorizonteCredito | date: 'dd.MM.yyyy' }}</p>
                 </div>
                 <div>
                     <p class="tabla-btn-disable"></p>
@@ -51,23 +51,23 @@
             <div class="tabla-col-2">
                 <div>
                     <p class="tabla-dato">Créditos</p>
-                    <p class="tabla-valor">0000</p>
+                    <p class="tabla-valor">{{ datos.creditos | number:'1.4-4' }}</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Compromet.esp.</p>
-                    <p class="tabla-valor">0000</p>
+                    <p class="tabla-valor">{{ datos.comprometEsp | number:'1.4-4' }}</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Val.Comercial</p>
-                    <p class="tabla-valor">0000</p>
+                    <p class="tabla-valor">{{ datos.valComercial | number:'1.4-4' }}</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Comprom.total</p>
-                    <p class="tabla-valor">0000</p>
+                    <p class="tabla-valor">{{ datos.compromTotal | number:'1.4-4' }}</p>
                 </div>
                 <div>
                     <p class="tabla-dato">Créditos aseg.</p>
-                    <p class="tabla-valor">00345600</p>
+                    <p class="tabla-valor">{{ datos.creditosAseg | number:'1.4-4' }}</p>
                 </div>
             </div>
         </div>
