@@ -1,0 +1,14 @@
+{
+    "cliente": 200001901,
+    "areaCtrlCreditos": "AG16",
+    "areaControlCredAQUACHILE": "USD",
+    "limiteCredito": 3000000,
+    "cuentaCredito": 200001901,
+    "gradoAgotamiento": 110.37,
+    "feHorizonteCredito": "07.03.2024",
+    "creditos": 527123.3860,
+    "comprometEsp": 121319.6200,
+    "valComercial": 2905221.9583,
+    "compromTotal": 3311025.7343,
+    "creditosAseg": 0.0000
+}

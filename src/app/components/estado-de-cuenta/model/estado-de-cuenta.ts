@@ -5,7 +5,7 @@ export interface IEstadoDeCuenta {
     limiteCredito: number,
     cuentaCredito: number,
     gradoAgotamiento: number,
-    feHorizonteCredito: Date,
+    feHorizonteCredito: string,
     creditos: number,
     comprometEsp: number,
     valComercial: number,
